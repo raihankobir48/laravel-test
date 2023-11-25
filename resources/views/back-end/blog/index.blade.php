@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="border p-3 rounded">
-                        <h6 class="mb-0 text-uppercase">Category Form</h6>
+                        <h6 class="mb-0 text-uppercase">Blog Form</h6>
                         <hr/>
                         <table class="table table-bordered table-striped table-hover">
                             <thead>

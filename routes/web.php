@@ -4,6 +4,10 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SupplierController;
+use App\Models\Supplier;
 use Illuminate\Support\Facades\Route;
 
 
@@ -29,4 +33,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 
     Route::resources(['categories'=>CategoryController::class]);
     Route::resources(['blogs'=>BlogController::class]);
+    Route::resources(['products'=>ProductController::class]);
+    Route::resources(['suppliers'=>SupplierController::class]);
+    Route::resources(['customers'=>CustomerController::class]);
 });

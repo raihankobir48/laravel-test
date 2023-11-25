@@ -44,4 +44,24 @@ class Category extends Model
         self::$category = Category::find($id);
         self::$category->delete();
     }
+
+    public function blogs()
+    {
+        return $this->hasMany(Blog::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
+    public function suppliers()
+    {
+        return $this->hasMany(Supplier::class);
+    }
+
+    public function customers()
+    {
+        return $this->hasMany(Customer::class);
+    }
 }
